@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import {connect} from 'react-redux';
-import updateMovies from './store/actions/updateMovies';
-import fetchUsers from './store/actions/fetchUsers';
+import updateMovies from './actions/updateMovies';
+import fetchUsers from './actions/fetchUsers';
 function App(props) {
     return (
     <div className="App">

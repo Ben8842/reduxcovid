@@ -1,4 +1,4 @@
-import {UPDATE_MOVIES} from '../actions/updatemovies';
+import {UPDATE_MOVIES} from '../actions/updateMovies';
 
 const movielistReducer = (state ={}, {type, payload}) => {
 
