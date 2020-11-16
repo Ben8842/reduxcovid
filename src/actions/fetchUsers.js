@@ -1,7 +1,7 @@
 export const FETCH_USERS = "FETCH_USERS";
 const fetchUsers = (dispatch) => {
-    fetch('https://reqres.in/api/users')
-    .then(res => res.json())
-    .then(res => dispatch({type:FETCH_USERS,payload:res.data}))
+  fetch("https://api.covidtracking.com/v1/states/current.json")
+    .then((res) => res.json())
+    .then((res) => dispatch({ type: FETCH_USERS, payload: res.data }));
 };
 export default fetchUsers;

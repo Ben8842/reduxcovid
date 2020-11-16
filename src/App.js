@@ -1,37 +1,43 @@
-import React from 'react';
-import './App.css';
-import {connect} from 'react-redux';
-import updateMovies from './actions/updateMovies';
-import fetchUsers from './actions/fetchUsers';
+import React from "react";
+import "./App.css";
+import { connect } from "react-redux";
+import updateMovies from "./actions/updateMovies";
+import fetchUsers from "./actions/fetchUsers";
+import USAMap from "react-usa-map";
+import Map from "./Map.js";
+
 function App(props) {
-    return (
+  return (
     <div className="App">
-        <h3>REDUX MOVIELIST APP</h3>
-        <br/>
-        <span
-        style={{color:'green'}}
-        >YOUR CURRENT MOVIE IS: </span>{props.movies.name}
-    <br/>
-    <p><button onClick={props.updateMovies}>SELECT NEW     MOVIE</button></p>
-    <br/>
-        {props.users.length === 0 ?
-        <p>THERE ARE NO USERS</p> :
-        props.users.map(user=> <p key={user.id}>{user.first_name} -    {user.email}</p>)}
-    <br/>
-    <button onClick={props.fetchUsers}>FETCH USERS</button>
+      <Map />
+      <h3>Corona Data</h3>
+
+      <br />
+
+      {props.users.length === 0 ? (
+        <p>no Data</p>
+      ) : (
+        props.users.map((user) => (
+          <p key={user.state}>
+            {user.negative} - {user.positive}
+          </p>
+        ))
+      )}
+      <br />
+      <button onClick={props.fetchUsers}>Find Corona Data</button>
     </div>
-);
-};
+  );
+}
 const MapStateToProps = (state) => {
-    return {
+  return {
     movies: state.movies,
-    users: state.users
-};
+    users: state.users,
+  };
 };
 const MapDispatchToProps = (dispatch) => {
-    return {
-    updateMovies: ()=> dispatch(updateMovies),
-    fetchUsers: ()=> dispatch(fetchUsers)
-};
+  return {
+    updateMovies: () => dispatch(updateMovies),
+    fetchUsers: () => dispatch(fetchUsers),
+  };
 };
 export default connect(MapStateToProps, MapDispatchToProps)(App);
