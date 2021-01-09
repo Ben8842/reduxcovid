@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/BenWPerkins/ReduxCovidAPI.git/static/css/main.73efbf52.chunk.css",
-    "main.js": "/BenWPerkins/ReduxCovidAPI.git/static/js/main.5b6f6ada.chunk.js",
-    "main.js.map": "/BenWPerkins/ReduxCovidAPI.git/static/js/main.5b6f6ada.chunk.js.map",
-    "runtime-main.js": "/BenWPerkins/ReduxCovidAPI.git/static/js/runtime-main.b84b51b0.js",
-    "runtime-main.js.map": "/BenWPerkins/ReduxCovidAPI.git/static/js/runtime-main.b84b51b0.js.map",
-    "static/js/2.7c2bb091.chunk.js": "/BenWPerkins/ReduxCovidAPI.git/static/js/2.7c2bb091.chunk.js",
-    "static/js/2.7c2bb091.chunk.js.map": "/BenWPerkins/ReduxCovidAPI.git/static/js/2.7c2bb091.chunk.js.map",
-    "index.html": "/BenWPerkins/ReduxCovidAPI.git/index.html",
-    "static/css/main.73efbf52.chunk.css.map": "/BenWPerkins/ReduxCovidAPI.git/static/css/main.73efbf52.chunk.css.map",
-    "static/js/2.7c2bb091.chunk.js.LICENSE.txt": "/BenWPerkins/ReduxCovidAPI.git/static/js/2.7c2bb091.chunk.js.LICENSE.txt"
+    "main.css": "/ReduxCovidAPI.git/static/css/main.73efbf52.chunk.css",
+    "main.js": "/ReduxCovidAPI.git/static/js/main.5b6f6ada.chunk.js",
+    "main.js.map": "/ReduxCovidAPI.git/static/js/main.5b6f6ada.chunk.js.map",
+    "runtime-main.js": "/ReduxCovidAPI.git/static/js/runtime-main.4107c3e6.js",
+    "runtime-main.js.map": "/ReduxCovidAPI.git/static/js/runtime-main.4107c3e6.js.map",
+    "static/js/2.7c2bb091.chunk.js": "/ReduxCovidAPI.git/static/js/2.7c2bb091.chunk.js",
+    "static/js/2.7c2bb091.chunk.js.map": "/ReduxCovidAPI.git/static/js/2.7c2bb091.chunk.js.map",
+    "index.html": "/ReduxCovidAPI.git/index.html",
+    "static/css/main.73efbf52.chunk.css.map": "/ReduxCovidAPI.git/static/css/main.73efbf52.chunk.css.map",
+    "static/js/2.7c2bb091.chunk.js.LICENSE.txt": "/ReduxCovidAPI.git/static/js/2.7c2bb091.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b84b51b0.js",
+    "static/js/runtime-main.4107c3e6.js",
     "static/js/2.7c2bb091.chunk.js",
     "static/css/main.73efbf52.chunk.css",
     "static/js/main.5b6f6ada.chunk.js"
