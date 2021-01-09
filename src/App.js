@@ -11,20 +11,17 @@ function App(props) {
     <div className="App">
       <Map />
       <h3>Corona Data</h3>
-
       <br />
-
-      {props.users.length === 0 ? (
+      {props.users !== null && props.users.length === 0 ? (
         <p>no Data</p>
-      ) : (
+      ) : props.users !== null ? (
         props.users.map((user) => (
           <p key={user.state}>
             {user.negative} - {user.positive}
           </p>
         ))
-      )}
-      <br />
-      <button onClick={props.fetchUsers}>Find Corona Data</button>
+      ) : null}
+      <br /> <button onClick={props.fetchUsers}>Find Corona Data</button>
     </div>
   );
 }
